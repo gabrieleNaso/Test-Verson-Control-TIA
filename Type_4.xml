@@ -502,7 +502,7 @@
         </Section>
       </Sections>
     </Member>
-    <Member Name="Action1" Datatype="G7_StepPlus_V2" Version="1.0">
+    <Member Name="Step2" Datatype="G7_StepPlus_V2" Version="1.0">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -529,7 +529,7 @@
         </Section>
       </Sections>
     </Member>
-    <Member Name="Action2" Datatype="G7_StepPlus_V2" Version="1.0">
+    <Member Name="Step3" Datatype="G7_StepPlus_V2" Version="1.0">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -556,7 +556,7 @@
         </Section>
       </Sections>
     </Member>
-    <Member Name="Action3" Datatype="G7_StepPlus_V2" Version="1.0">
+    <Member Name="Step4" Datatype="G7_StepPlus_V2" Version="1.0">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -651,7 +651,7 @@
           </Interlock>
         </Interlocks>
       </Step>
-      <Step Number="2" Init="false" Name="Action1" MaximumStepTime="T#10S" WarningTime="T#7S">
+      <Step Number="2" Init="false" Name="Step2" MaximumStepTime="T#10S" WarningTime="T#7S">
         <Actions>
           <Action />
         </Actions>
@@ -686,7 +686,7 @@
           </Interlock>
         </Interlocks>
       </Step>
-      <Step Number="3" Init="false" Name="Action2" MaximumStepTime="T#10S" WarningTime="T#7S">
+      <Step Number="3" Init="false" Name="Step3" MaximumStepTime="T#10S" WarningTime="T#7S">
         <Actions>
           <Action />
         </Actions>
@@ -721,7 +721,7 @@
           </Interlock>
         </Interlocks>
       </Step>
-      <Step Number="4" Init="false" Name="Action3" MaximumStepTime="T#10S" WarningTime="T#7S">
+      <Step Number="4" Init="false" Name="Step4" MaximumStepTime="T#10S" WarningTime="T#7S">
         <Actions>
           <Action />
         </Actions>
