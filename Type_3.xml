@@ -439,7 +439,7 @@
         </Section>
       </Sections>
     </Member>
-    <Member Name="Step1" Datatype="G7_StepPlus_V2" Version="1.0">
+    <Member Name="Init" Datatype="G7_StepPlus_V2" Version="1.0">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -466,7 +466,7 @@
         </Section>
       </Sections>
     </Member>
-    <Member Name="Step_2" Datatype="G7_StepPlus_V2" Version="1.0">
+    <Member Name="Action1" Datatype="G7_StepPlus_V2" Version="1.0">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -493,7 +493,7 @@
         </Section>
       </Sections>
     </Member>
-    <Member Name="Step_3" Datatype="G7_StepPlus_V2" Version="1.0">
+    <Member Name="Action2" Datatype="G7_StepPlus_V2" Version="1.0">
       <AttributeList>
         <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
@@ -553,7 +553,7 @@
       <MultiLanguageText Lang="en-US" />
     </Comment>
     <Steps>
-      <Step Number="1" Init="true" Name="Step1" MaximumStepTime="T#10S" WarningTime="T#7S">
+      <Step Number="1" Init="true" Name="Init" MaximumStepTime="T#10S" WarningTime="T#7S">
         <Actions>
           <Action />
         </Actions>
@@ -588,7 +588,7 @@
           </Interlock>
         </Interlocks>
       </Step>
-      <Step Number="3" Init="false" Name="Step_3" MaximumStepTime="T#10S" WarningTime="T#7S">
+      <Step Number="3" Init="false" Name="Action2" MaximumStepTime="T#10S" WarningTime="T#7S">
         <Actions>
           <Action />
         </Actions>
@@ -623,7 +623,7 @@
           </Interlock>
         </Interlocks>
       </Step>
-      <Step Number="2" Init="false" Name="Step_2" MaximumStepTime="T#10S" WarningTime="T#7S">
+      <Step Number="2" Init="false" Name="Action1" MaximumStepTime="T#10S" WarningTime="T#7S">
         <Actions>
           <Action />
         </Actions>
@@ -663,12 +663,26 @@
       <Transition IsMissing="false" Name="Trans1" Number="1" ProgrammingLanguage="LAD">
         <FlgNet>
           <Parts>
-            <Part Name="TrCoil" UId="21" />
+            <Access Scope="GlobalVariable" UId="21">
+              <Symbol>
+                <Component Name="condition_type_3_transition_1" />
+              </Symbol>
+            </Access>
+            <Part Name="Contact" UId="22" />
+            <Part Name="TrCoil" UId="23" />
           </Parts>
           <Wires>
-            <Wire UId="22">
+            <Wire UId="24">
               <Powerrail />
-              <NameCon UId="21" Name="in" />
+              <NameCon UId="22" Name="in" />
+            </Wire>
+            <Wire UId="25">
+              <IdentCon UId="21" />
+              <NameCon UId="22" Name="operand" />
+            </Wire>
+            <Wire UId="26">
+              <NameCon UId="22" Name="out" />
+              <NameCon UId="23" Name="in" />
             </Wire>
           </Wires>
         </FlgNet>
@@ -676,12 +690,26 @@
       <Transition IsMissing="false" Name="Trans2" Number="2" ProgrammingLanguage="LAD">
         <FlgNet>
           <Parts>
-            <Part Name="TrCoil" UId="21" />
+            <Access Scope="GlobalVariable" UId="21">
+              <Symbol>
+                <Component Name="condition_type_3_transition_2" />
+              </Symbol>
+            </Access>
+            <Part Name="Contact" UId="22" />
+            <Part Name="TrCoil" UId="23" />
           </Parts>
           <Wires>
-            <Wire UId="22">
+            <Wire UId="24">
               <Powerrail />
-              <NameCon UId="21" Name="in" />
+              <NameCon UId="22" Name="in" />
+            </Wire>
+            <Wire UId="25">
+              <IdentCon UId="21" />
+              <NameCon UId="22" Name="operand" />
+            </Wire>
+            <Wire UId="26">
+              <NameCon UId="22" Name="out" />
+              <NameCon UId="23" Name="in" />
             </Wire>
           </Wires>
         </FlgNet>
