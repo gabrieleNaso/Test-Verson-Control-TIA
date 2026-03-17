@@ -770,9 +770,9 @@
           <TransitionRef Number="3" />
         </NodeFrom>
         <NodeTo>
-          <StepRef Number="2" />
+          <EndConnection />
         </NodeTo>
-        <LinkType>Jump</LinkType>
+        <LinkType>Direct</LinkType>
       </Connection>
     </Connections>
   </Sequence>
