@@ -8,7 +8,7 @@
     <Member Name="var_1" Datatype="Bool" />
     <Member Name="var_2" Datatype="Int" />
     <Member Name="var_3" Datatype="Real" />
-    <Member Name="var_4" Datatype="Array[0..9] of Bool" />
+    <Member Name="var_4" Datatype="Array[0..9] of Bool" Remanence="Retain" />
     <Member Name="var_5" Datatype="Bool" />
     <Member Name="var_6" Datatype="Bool" />
     <Member Name="var_7" Datatype="Real" />
