@@ -11,7 +11,7 @@
     <Member Name="var_4" Datatype="Array[0..9] of Bool" />
     <Member Name="var_5" Datatype="Bool" />
     <Member Name="var_6" Datatype="Bool" />
-    <Member Name="var_7" Datatype="Bool" />
+    <Member Name="var_7" Datatype="Real" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
