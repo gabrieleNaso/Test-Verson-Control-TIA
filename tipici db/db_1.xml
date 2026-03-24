@@ -15,10 +15,13 @@
     </Member>
     <Member Name="var_3" Datatype="Real" />
     <Member Name="var_4" Datatype="Array[0..9] of Bool" Remanence="Retain" />
-    <Member Name="var_5" Datatype="Bool">
+    <Member Name="var_5" Datatype="Struct">
       <AttributeList>
         <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
+      <Member Name="var_5_1" Datatype="Bool" />
+      <Member Name="var_5_2" Datatype="Int" />
+      <Member Name="var_5_3" Datatype="Real" />
     </Member>
     <Member Name="var_6" Datatype="Bool">
       <AttributeList>
@@ -30,6 +33,8 @@
         <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
       </AttributeList>
     </Member>
+    <Member Name="var_8" Datatype="IEC_COUNTER" Version="1.0" />
+    <Member Name="var_9" Datatype="IEC_TIMER" Version="1.0" />
   </Section>
 </Sections></Interface>
       <MemoryLayout>Optimized</MemoryLayout>
